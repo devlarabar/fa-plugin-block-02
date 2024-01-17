@@ -1,0 +1,66 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "femart/custom-block-02",
+  "version": "0.1.0",
+  "title": "FemArt Custom Block 02",
+  "category": "design",
+  "icon": "hammer",
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "mediaID1": {
+      "type": "string"
+    },
+    "mediaURL1": {
+      "type": "string"
+    },
+    "mediaCaption1": {
+      "type": "string"
+    },
+    "mediaID2": {
+      "type": "string"
+    },
+    "mediaURL2": {
+      "type": "string"
+    },
+    "mediaCaption2": {
+      "type": "string"
+    },
+    "mediaID3": {
+      "type": "string"
+    },
+    "mediaURL3": {
+      "type": "string"
+    },
+    "mediaCaption3": {
+      "type": "string"
+    },
+    "mediaID4": {
+      "type": "string"
+    },
+    "mediaURL4": {
+      "type": "string"
+    },
+    "mediaCaption4": {
+      "type": "string"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonURL": {
+      "type": "string"
+    }
+  },
+  "textdomain": "femart-custom-block-02",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "keywords": [
+    "02",
+    "FemArt"
+  ]
+}
