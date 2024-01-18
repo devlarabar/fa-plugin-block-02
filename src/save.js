@@ -6,33 +6,61 @@ import { RichText, useBlockProps } from '@wordpress/block-editor';
 
 const Save = (props) => {
     const {
-        attributes: { title, mediaCaption, mediaURL, buttonText, buttonURL, content },
+        attributes: {
+            title,
+            buttonText,
+            buttonURL,
+            content,
+            mediaURL1,
+            mediaCaption1,
+            mediaURL2,
+            mediaCaption2,
+            mediaURL3,
+            mediaCaption3,
+            mediaURL4,
+            mediaCaption4 },
     } = props;
 
     const blockProps = useBlockProps.save();
     return (
-        <div {...blockProps} className="fa-media-emphasis-block">
-            <div class="fa-emphasis-block-media-content">
-                {mediaURL && (
-                    <div class="fa-media-emphasis-image-container" style={{ backgroundImage: `url(${mediaURL})` }}>
-                        {mediaCaption && <span class="inner-caption-span">{mediaCaption}</span>}
-                    </div>
-                )}
-                <div class="fa-emphasis-block-text-container">
-                    <RichText.Content
-                        tagName="h2"
-                        value={title}
-                    />
-                    <RichText.Content
-                        tagName="div"
-                        value={content}
-                    />
+        <div {...blockProps} className="fa-02-block">
+            <div class="fa-02-text-content">
+                <RichText.Content
+                    tagName="h2"
+                    className="fa-header-bottom-divider"
+                    value={title}
+                />
+                <RichText.Content
+                    tagName="div"
+                    value={content}
+                />
+                <div class="fa-02-button-container">
+                    <a href={`/${buttonURL}`}><button class="fa-media-emphasis-block-btn wp-block-button__link wp-element-button">
+                        {buttonText ? buttonText + " →" : "Read More →"}
+                    </button></a>
                 </div>
             </div>
-            <div class="fa-emphasis-block-button-container">
-                <a href={`/${buttonURL}`}><button class="fa-media-emphasis-block-btn wp-block-button__link wp-element-button">
-                    {buttonText ? buttonText + " →" : "Read More →"}
-                </button></a>
+            <div class="fa-02-gallery-container">
+                {mediaURL1 && (
+                    <div class="fa-02-image-container" style={{ backgroundImage: `url(${mediaURL1})` }}>
+                        {mediaCaption1 && <span class="inner-caption-span">{mediaCaption1}</span>}
+                    </div>
+                )}
+                {mediaURL2 && (
+                    <div class="fa-02-image-container" style={{ backgroundImage: `url(${mediaURL2})` }}>
+                        {mediaCaption2 && <span class="inner-caption-span">{mediaCaption2}</span>}
+                    </div>
+                )}
+                {mediaURL3 && (
+                    <div class="fa-02-image-container" style={{ backgroundImage: `url(${mediaURL3})` }}>
+                        {mediaCaption3 && <span class="inner-caption-span">{mediaCaption3}</span>}
+                    </div>
+                )}
+                {mediaURL4 && (
+                    <div class="fa-02-image-container" style={{ backgroundImage: `url(${mediaURL4})` }}>
+                        {mediaCaption4 && <span class="inner-caption-span">{mediaCaption4}</span>}
+                    </div>
+                )}
             </div>
         </div>
     );
