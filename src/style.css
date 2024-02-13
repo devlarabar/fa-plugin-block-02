@@ -1,10 +1,23 @@
-.fa-02-block {
+.fa-02-block,
+.entry-content .fa-02-block {
     display: flex;
     background-color: var(--tertiary);
     border-radius: var(--border-radius-lg) 0 0 var(--border-radius-lg);
     padding: 6rem;
-    margin-left: 10rem;
+    align-self: flex-end;
     gap: 5rem;
+    position: relative;
+}
+
+.fa-02-block::before {
+    z-index: -1;
+    content: "";
+    background-color: var(--tertiary);
+    width: 49.5vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
 }
 
 .fa-02-img-btn {

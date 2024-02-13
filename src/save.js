@@ -21,9 +21,11 @@ const Save = (props) => {
             mediaCaption4 },
     } = props;
 
-    const blockProps = useBlockProps.save();
+    const blockProps = useBlockProps.save({
+        className: "fa-02-block"
+    });
     return (
-        <div {...blockProps} className="fa-02-block">
+        <div {...blockProps}>
             <div class="fa-02-text-content">
                 <RichText.Content
                     tagName="h2"

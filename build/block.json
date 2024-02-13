@@ -1,6 +1,5 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
-  "apiVersion": 3,
   "name": "femart/custom-block-02",
   "version": "0.1.0",
   "title": "FemArt Custom Block 02",
