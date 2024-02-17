@@ -1,3 +1,8 @@
+.fa-02-block-container {
+    width: 100%;
+    padding-left: 20px;
+}
+
 .fa-02-block,
 .entry-content .fa-02-block {
     display: flex;
@@ -7,7 +12,6 @@
     align-self: flex-end;
     gap: 5rem;
     position: relative;
-    margin-left: 20px;
 }
 
 .fa-02-block::before {
@@ -116,5 +120,10 @@
 @media all and (max-width: 680px) {
     .fa-02-gallery-container {
         grid-template-columns: 1fr;
+    }
+
+    .fa-02-block,
+    .entry-content .fa-02-block {
+        padding: 4rem;
     }
 }
