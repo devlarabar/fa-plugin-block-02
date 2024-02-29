@@ -66,6 +66,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center;
+    background-size: cover;
+    height: 150px;
 }
 
 .fa-02-button-container a {

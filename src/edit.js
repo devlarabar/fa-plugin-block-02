@@ -113,49 +113,49 @@ const Edit = (props) => {
                 </div>
             </div>
             <div className="fa-02-gallery-container">
-                <div class="fa-02-image-container fa-02-edit-image-container">
+                <div class="fa-02-image-container fa-02-edit-image-container" style={{ backgroundImage: `url(${mediaURL1})` }}>
                     <MediaUpload
                         onSelect={onSelectImage1}
                         allowedTypes="image"
                         value={mediaID1}
                         render={({ open }) => (
                             <Button className={mediaID1 ? 'fa-02-img-btn image-button' : 'fa-02-img-btn button button-large'} onClick={open}>
-                                {!mediaID1 ? __('Upload Image', 'femart-custom-block-02') : <img src={mediaURL1} className="fa-02-edit-image" alt={__('Upload Image', 'femart-custom-block-02')} />}
+                                {!mediaID1 && __('Upload Image', 'femart-custom-block-02')}
                             </Button>
                         )} />
                 </div>
-                <div class="fa-02-image-container fa-02-edit-image-container">
+                <div class="fa-02-image-container fa-02-edit-image-container" style={{ backgroundImage: `url(${mediaURL2})` }}>
                     <MediaUpload
                         onSelect={onSelectImage2}
                         allowedTypes="image"
                         value={mediaID2}
                         render={({ open }) => (
                             <Button className={mediaID2 ? 'fa-02-img-btn image-button' : 'fa-02-img-btn button button-large'} onClick={open}>
-                                {!mediaID2 ? __('Upload Image', 'femart-custom-block-02') : <img src={mediaURL2} className="fa-02-edit-image" alt={__('Upload Image', 'femart-custom-block-02')} />}
+                                {!mediaID2 && __('Upload Image', 'femart-custom-block-02')}
                             </Button>
                         )} />
 
                 </div>
-                <div class="fa-02-image-container fa-02-edit-image-container">
+                <div class="fa-02-image-container fa-02-edit-image-container" style={{ backgroundImage: `url(${mediaURL3})` }}>
                     <MediaUpload
                         onSelect={onSelectImage3}
                         allowedTypes="image"
                         value={mediaID3}
                         render={({ open }) => (
                             <Button className={mediaID3 ? 'fa-02-img-btn image-button' : 'fa-02-img-btn button button-large'} onClick={open}>
-                                {!mediaID3 ? __('Upload Image', 'femart-custom-block-02') : <img src={mediaURL3} className="fa-02-edit-image" alt={__('Upload Image', 'femart-custom-block-02')} />}
+                                {!mediaID3 && __('Upload Image', 'femart-custom-block-02')}
                             </Button>
                         )} />
 
                 </div>
-                <div class="fa-02-image-container fa-02-edit-image-container">
+                <div class="fa-02-image-container fa-02-edit-image-container" style={{ backgroundImage: `url(${mediaURL4})` }}>
                     <MediaUpload
                         onSelect={onSelectImage4}
                         allowedTypes="image"
                         value={mediaID4}
                         render={({ open }) => (
                             <Button className={mediaID4 ? 'fa-02-img-btn image-button' : 'fa-02-img-btn button button-large'} onClick={open}>
-                                {!mediaID4 ? __('Upload Image', 'femart-custom-block-02') : <img src={mediaURL4} className="fa-02-edit-image" alt={__('Upload Image', 'femart-custom-block-02')} />}
+                                {!mediaID4 && __('Upload Image', 'femart-custom-block-02')}
                             </Button>
                         )} />
                 </div>
